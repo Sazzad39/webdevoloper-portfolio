@@ -238,3 +238,97 @@ textarea {
     background: #FFF;
     width: 100%;
 }
+
+/* adding media query for responsive styles */
+/* mobiel devices/small devices */
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .header{
+        background-image: none;
+    }
+     nav,
+     nav > ul, 
+    .banner, 
+    .skills-container,
+    .resume-container,
+    .about-info-container,
+    footer {
+        flex-direction: column;
+    }
+    nav > ul {
+        gap: 10px;
+    }
+
+.banner .profile-pic{
+    width: 100%;
+}
+
+   .banner, #what-i-do-description {
+        padding: 20px;
+    }
+    .bt-primary, .btn-primary{
+        margin-top: 10px;
+        
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .footer-colum {
+        width: 100%;
+    }
+
+    .contact input[type="name"],
+    .contact input[type="email"],
+    textarea {
+        width: 80%;
+    }
+
+    .about {
+        padding: 10px;
+    }
+
+}
+
+/* tablet,ipad/medium devices */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .skills-container,
+    .resume-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #what-i-do-description {
+        padding: 25px;
+    }
+
+    footer {
+        padding: 25px;
+    }
+
+    .footer-colum {
+        width: 100%;
+    }
+
+    .contact input[type="name"],
+    .contact input[type="email"],
+    textarea {
+        width: 80%;
+    }
+
+    .about {
+        padding: 30px;
+    }
+
+}
+
+/* large/extra large devices */
+
+@media screen and (min-width:992px) and (max-width:1400px) {}
